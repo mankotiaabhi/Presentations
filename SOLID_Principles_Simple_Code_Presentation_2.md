@@ -1,7 +1,8 @@
-# SOLID Principles 
+# SOLID Principles
+
 ------------------------------------------------------------------------
 
-# What is SOLID?
+## What is SOLID?
 
 SOLID = 5 Design Principles that make code:
 
@@ -12,11 +13,11 @@ SOLID = 5 Design Principles that make code:
 
 ------------------------------------------------------------------------
 
-# 1️⃣ Single Responsibility Principle (SRP)
+## Single Responsibility Principle (SRP)
 
-👉 One class = One responsibility
+One class = One responsibility
 
-❌ Wrong Example
+### Wrong Example
 
 ``` python
 class Report:
@@ -27,7 +28,7 @@ class Report:
         print("Saving to file")
 ```
 
-✅ Correct Example
+### Correct Example
 
 ``` python
 class ReportGenerator:
@@ -41,11 +42,11 @@ class ReportSaver:
 
 ------------------------------------------------------------------------
 
-# 2️⃣ Open/Closed Principle (OCP)
+## Open/Closed Principle (OCP)
 
-👉 Open for extension, Closed for modification
+Open for extension, Closed for modification
 
-❌ Wrong Example
+### Wrong Example
 
 ``` python
 class Discount:
@@ -56,7 +57,7 @@ class Discount:
             return 20
 ```
 
-✅ Correct Example
+### Correct Example
 
 ``` python
 class Discount:
@@ -74,11 +75,11 @@ class PremiumDiscount(Discount):
 
 ------------------------------------------------------------------------
 
-# 3️⃣ Liskov Substitution Principle (LSP)
+## Liskov Substitution Principle (LSP)
 
-👉 Child class should properly replace parent class
+Child class should properly replace parent class
 
-❌ Wrong Example
+### Wrong Example
 
 ``` python
 class Bird:
@@ -90,7 +91,7 @@ class Ostrich(Bird):
         raise Exception("Ostrich can't fly")
 ```
 
-✅ Correct Example
+### Correct Example
 
 ``` python
 class Bird:
@@ -109,11 +110,11 @@ class Ostrich(Bird):
 
 ------------------------------------------------------------------------
 
-# 4️⃣ Interface Segregation Principle (ISP)
+## Interface Segregation Principle (ISP)
 
-👉 Don't force classes to implement unused methods
+Don't force classes to implement unused methods
 
-❌ Wrong Example
+### Wrong Example
 
 ``` python
 class Worker:
@@ -127,7 +128,7 @@ class Robot(Worker):
         raise Exception("Robot doesn't eat")
 ```
 
-✅ Correct Example
+### Correct Example
 
 ``` python
 class Workable:
@@ -147,11 +148,11 @@ class Robot(Workable):
 
 ------------------------------------------------------------------------
 
-# 5️⃣ Dependency Inversion Principle (DIP)
+## Dependency Inversion Principle (DIP)
 
-👉 Depend on abstraction, not concrete class
+Depend on abstraction, not concrete class
 
-❌ Wrong Example
+### Wrong Example
 
 ``` python
 class MySQLDatabase:
@@ -163,7 +164,7 @@ class Application:
         self.db = MySQLDatabase()
 ```
 
-✅ Correct Example
+### Correct Example
 
 ``` python
 class Database:
@@ -188,15 +189,7 @@ app.start()
 
 ------------------------------------------------------------------------
 
-# Final Summary
-
-S -- Single Responsibility
-O -- Open/Closed
-L -- Liskov Substitution
-I -- Interface Segregation
-D -- Dependency Inversion
-
-## ✅ Why SOLID is Important
+## Final Summary
 
 -   Makes code clean and structured
 -   Reduces complexity
