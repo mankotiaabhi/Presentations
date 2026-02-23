@@ -1,5 +1,4 @@
-# SOLID Principles in Python (Simple & Code Focused)
-
+# SOLID Principles 
 ------------------------------------------------------------------------
 
 # What is SOLID?
@@ -191,13 +190,19 @@ app.start()
 
 # Final Summary
 
-S -- Single Responsibility\
-O -- Open/Closed\
-L -- Liskov Substitution\
-I -- Interface Segregation\
+S -- Single Responsibility
+O -- Open/Closed
+L -- Liskov Substitution
+I -- Interface Segregation
 D -- Dependency Inversion
 
-If you follow SOLID: ✔ Cleaner Code\
-✔ Flexible Design\
-✔ Easy Maintenance\
-✔ Better Interviews 😄
+## ✅ Why SOLID is Important
+
+-   Makes code clean and structured
+-   Reduces complexity
+-   Prevents tight coupling
+-   Makes code easier to test
+-   Helps in large-scale project development
+-   Improves teamwork and collaboration
+-   Makes future changes easier
+-   Increases software stability
