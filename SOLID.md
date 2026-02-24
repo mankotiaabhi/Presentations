@@ -182,9 +182,6 @@ class Application:
     def start(self):
         self.db.connect()
 
-db = MySQLDatabase()
-app = Application(db)
-app.start()
 ```
 
 ------------------------------------------------------------------------
